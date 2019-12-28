@@ -15,7 +15,29 @@ class Menu extends Component {
         this.setState({selectedDish: dish})
     }
 
-    z
+    renderDish(dish){
+        if (dish != null){
+            return(
+                <Card>
+                    <CardImg width="100%" src={dish.image} alt={dish.name} />
+                    <CardBody>
+                    <CardTitle>{dish.name}</CardTitle>
+                    <CardText>
+                        {dish.description}
+                    </CardText>
+                    </CardBody>
+                </Card>
+            )
+        }
+        else{
+            return(
+                <div>
+                    No dish
+                </div>
+            )
+        }
+    }
+
     render() {
         const menu = this.props.dishes.map((dish) => {
             return (
