@@ -25,7 +25,8 @@ class DishDetail extends Component {
                         <h4>Comments</h4>
                         {this.props.selectedDish.comments.map((entry, index) => (
                             <p key={index}> {entry.comment} <br /> 
-                            --{entry.author} , {new Date(entry.date).toLocaleDateString("en-US", 
+                            --{entry.author} , 
+                            {new Date(entry.date).toLocaleDateString("en-US", 
                             { 
                                 year: "numeric", 
                                 month: "short",  

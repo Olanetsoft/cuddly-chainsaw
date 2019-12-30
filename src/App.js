@@ -18,7 +18,7 @@ class App extends Component {
       <div>
         <Navbar dark color="primary">
           <div className="container">
-            <NavbarBrand href="/">Cuddly Chainsaw Meal App</NavbarBrand>
+            <NavbarBrand href="/">Cuddly Chainsaw Meal-App</NavbarBrand>
           </div>
         </Navbar>
         <Menu 
