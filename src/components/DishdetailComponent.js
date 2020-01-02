@@ -23,6 +23,7 @@ class DishDetail extends Component {
                     </div>
                     <div className="col-12 col-md-5 m-1">
                         <h4>Comments</h4>
+                        <ul className='list-unstyled'>
                         {this.props.selectedDish.comments.map((entry, index) => (
                             <p key={index}> {entry.comment} <br /> 
                             --{entry.author} , 
@@ -34,6 +35,8 @@ class DishDetail extends Component {
                             }
                             )}</p>
                         ))}
+                        </ul>
+                        
                     </div>
                 </div>
             );
