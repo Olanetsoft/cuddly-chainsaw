@@ -17,6 +17,7 @@ class Menu extends Component {
         this.setState({selectedDish: dish})
     }
 
+    //I commented this because its passed as a props from dish details
     // renderDish(dish){
     //     if (dish != null){
     //         return(
